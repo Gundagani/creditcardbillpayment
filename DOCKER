@@ -1,0 +1,4 @@
+FROM openjdk:8
+EXPOSE 8089
+ADD target/creditcardapp.jar creditcardapp.jar
+ENTRYPOINT["java","-jar","creditcardapp.jar"]
